@@ -1,0 +1,42 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="heartCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/cb_heart_selector</item>
+    </style>
+
+    <style name="goodCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/cb_good_selector</item>
+    </style>
+
+    <style name="badCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/cb_bad_selector</item>
+    </style>
+
+    <style name="score0RadioBtn" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/rb_score0_selector</item>
+    </style>
+
+    <style name="score1RadioBtn" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/rb_score1_selector</item>
+    </style>
+
+    <style name="score2RadioBtn" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/rb_score2_selector</item>
+    </style>
+
+    <style name="score3RadioBtn" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/rb_score3_selector</item>
+    </style>
+
+    <style name="score4RadioBtn" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/rb_score4_selector</item>
+    </style>
+
+</resources>

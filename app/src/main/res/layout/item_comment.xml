@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_course_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                android:text="课程名称"
+                />
+
+        </LinearLayout>
+
+    <!--课程信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:background="@color/colorWhite"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#8BC34A"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="推荐指数"
+                    />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:paddingHorizontal="10dp"
+                android:gravity="center_vertical"
+                >
+
+                <RadioButton
+                    style="@style/score0RadioBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioButton
+                    style="@style/score1RadioBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioButton
+                    style="@style/score2RadioBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioButton
+                    style="@style/score3RadioBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioButton
+                    style="@style/score4RadioBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!--热门标签-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            android:gravity="center_vertical"
+            android:background="@color/colorWhite"
+            tools:ignore="MissingClass">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_bread"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="难"
+                android:layout_marginHorizontal="5dp"
+                android:textColor="@color/colorBlack"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp"
+                android:background="@drawable/tv_round_tag"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="英文教材"
+                android:layout_marginHorizontal="5dp"
+                android:textColor="@color/colorBlack"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp"
+                android:background="@drawable/tv_round_tag"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开卷"
+                android:layout_marginHorizontal="5dp"
+                android:textColor="@color/colorBlack"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp"
+                android:background="@drawable/tv_round_tag"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="4"
+                android:lines="1"
+                android:inputType="text"
+                android:hint="添加标签"
+                android:textSize="16dp"
+                android:background="@drawable/et_bg_round_lg"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                android:background="@drawable/btn_round_check"
+                android:text="+"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:lines="3"
+                android:textSize="16dp"
+                android:inputType="text"
+                android:hint="课程评价"
+                android:background="@drawable/et_bg_round_lg"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btn_submit_course"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:background="@drawable/btn_bg_round_sm"
+                android:text="提交"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_teacher_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:text="任课老师"
+                    />
+
+            </LinearLayout>
+
+            <!--课程信息-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:background="@color/colorWhite"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="#8BC34A"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorBlack"
+                            android:text="推荐指数"
+                            />
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:paddingHorizontal="10dp"
+                        android:gravity="center_vertical"
+                        >
+
+                        <RadioButton
+                            style="@style/score0RadioBtn"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <RadioButton
+                            style="@style/score1RadioBtn"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <RadioButton
+                            style="@style/score2RadioBtn"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <RadioButton
+                            style="@style/score3RadioBtn"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <RadioButton
+                            style="@style/score4RadioBtn"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <!--热门标签-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorWhite"
+                    tools:ignore="MissingClass">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@mipmap/ic_cheese"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="喜欢拖课"
+                        android:layout_marginHorizontal="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="2dp"
+                        android:background="@drawable/tv_round_tag"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="逻辑清晰"
+                        android:layout_marginHorizontal="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="2dp"
+                        android:background="@drawable/tv_round_tag"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="4"
+                        android:lines="1"
+                        android:inputType="text"
+                        android:hint="添加标签"
+                        android:textSize="16dp"
+                        android:background="@drawable/et_bg_round_lg"
+                        />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:background="@drawable/btn_round_check"
+                        android:text="+"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:lines="3"
+                        android:textSize="16dp"
+                        android:inputType="text"
+                        android:hint="教师评价"
+                        android:background="@drawable/et_bg_round_lg"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_submit_teacher"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"
+                        android:background="@drawable/btn_bg_round_sm"
+                        android:text="提交"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

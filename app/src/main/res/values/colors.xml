@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryLight">#AB008577</color>
+    <color name="colorPrimaryLighter">#4B008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#11000000</color>
+    <color name="colorPurple">#7457ED</color>
+    <color name="colorBlack">#D8000000</color>
+    <color name="colorBlackLight">#A3000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="navIcon">#AB008577</color>
+    <color name="searchBar">#E4008577</color>
+    <color name="searchBarEditText">#79008577</color>
+    <color name="colorPink">#FF70A0</color>
+    <color name="scoreIcon">#000000</color>
+    <color name="scoreIconChecked">#008577</color>
+
+</resources>

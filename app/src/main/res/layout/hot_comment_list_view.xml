@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWhite"
+        >
+
+        <!--热门评价标题-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            >
+
+            <ImageView
+                android:id="@+id/ic_dog"
+                android:src="@mipmap/ic_dog1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                />
+
+        </LinearLayout>
+
+        <!--热门评价-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_marginLeft="3dp"
+                        android:id="@+id/iv_score_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_score_4_checked" />
+
+                    <TextView
+                        android:id="@+id/tv_comment_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/colorPrimaryLighter"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="5dp"
+                        android:text="4.8"
+                        android:textColor="@color/colorBlack" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="老师上的课很有趣，讲的很好！"
+                    />
+
+                <!--标签-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorWhite"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@mipmap/ic_donut"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_tag1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="讲课很好懂"
+                        android:layout_marginHorizontal="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="2dp"
+                        android:background="@drawable/tv_round_tag"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_tag2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="给分好"
+                        android:layout_marginHorizontal="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="2dp"
+                        android:background="@drawable/tv_round_tag"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_tag3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="有随堂测试"
+                        android:layout_marginHorizontal="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="2dp"
+                        android:background="@drawable/tv_round_tag"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|end"
+                    >
+
+                    <CheckBox
+                        android:layout_marginHorizontal="5dp"
+                        android:id="@+id/cb_good"
+                        style="@style/goodCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <CheckBox
+                        android:layout_marginHorizontal="10dp"
+                        android:id="@+id/cb_bad"
+                        style="@style/badCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PinkStar"
+            android:textSize="30dp"
+            android:textColor="@color/colorWhite"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logo"
+            >
+        </ImageView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_login_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg_round_lg"
+            android:layout_gravity="center"
+            android:hint="账号"
+            android:lines="1"
+            android:inputType="text"
+            android:layout_marginBottom="8dp"
+            />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg_round_lg"
+            android:layout_gravity="center"
+            android:hint="学号邮箱"
+            android:lines="1"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="8dp"
+            />
+
+        <LinearLayout
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/et_check_code"
+                android:layout_width="210dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg_round_lg"
+                android:hint="验证码"
+                android:lines="1"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btn_check_code"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/btn_round_check"
+                android:textColor="@color/colorPrimary"
+                android:paddingHorizontal="15dp"
+                android:textSize="14dp"
+                android:text="发送验证码"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg_round_lg"
+            android:layout_gravity="center"
+            android:hint="密码"
+            android:lines="1"
+            android:layout_marginBottom="8dp"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/et_password_check"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg_round_lg"
+            android:layout_gravity="center"
+            android:lines="1"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lv_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="18dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn_reg"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_round_reg"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:gravity="center_horizontal"
+            android:text="注册"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

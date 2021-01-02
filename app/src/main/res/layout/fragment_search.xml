@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:paddingVertical="5dp"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:text="查询"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            >
+
+            <EditText
+                android:id="@+id/et_course_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:inputType="text"
+                android:background="@drawable/et_bg_round_lg"
+                android:hint="查询课程/线性代数B"
+                />
+
+            <Button
+                android:id="@+id/btn_search_course_name"
+                android:layout_marginTop="10dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:background="@drawable/btn_bg_round_sm"
+                android:text="查询"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            >
+
+            <EditText
+                android:id="@+id/et_teacher_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:inputType="text"
+                android:background="@drawable/et_bg_round_lg"
+                android:hint="查询老师/A老师"
+                />
+
+            <Button
+                android:id="@+id/btn_search_teacher_name"
+                android:layout_marginTop="10dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:background="@drawable/btn_bg_round_sm"
+                android:text="查询"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            >
+
+            <EditText
+                android:id="@+id/et_category_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:inputType="text"
+                android:background="@drawable/et_bg_round_lg"
+                android:hint="查询学院/计算机学院"
+                />
+
+            <Button
+                android:id="@+id/btn_search_category_name"
+                android:layout_marginTop="10dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:background="@drawable/btn_bg_round_sm"
+                android:text="查询"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
